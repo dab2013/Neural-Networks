@@ -8,7 +8,7 @@ from statistics import mean, median
 from collections import Counter
 
 LR = 1e-3
-env = gym.make('CartPole-v0')
+env = gym.make('SpaceInvaders-v0')
 env.reset()
 goal_steps = 500
 score_requirement = 50
