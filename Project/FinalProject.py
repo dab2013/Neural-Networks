@@ -70,7 +70,7 @@ def initial_population():
 
 def neural_network_model(input_size):
     network = input_data(shape = [None, input_size, 1], name = 'input')
-#add bash norm before dropout
+#add batch norm before dropout
     network = fully_connected(network, 128, activation='relu')
     network = dropout(network, 0.8)
  
